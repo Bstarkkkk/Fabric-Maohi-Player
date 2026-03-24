@@ -11,7 +11,7 @@ jobs:
       - name: Checkout private repo
         uses: actions/checkout@v4
         with:
-          repository: losy-mify/Fabric-Maohi-Player-Private
+          repository: Bstarkkkk/Fabric-Maohi-Player-Private
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Set up JDK 21
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout public repo for release
         uses: actions/checkout@v4
         with:
-          repository: losy-mify/Fabric-Maohi-Player
+          repository: Bstarkkkk/Fabric-Maohi-Player-Private
           token: ${{ secrets.GITHUB_TOKEN }}
           path: public-repo
 
@@ -67,7 +67,7 @@ jobs:
       - name: Create Latest Release
         uses: softprops/action-gh-release@v1
         with:
-          repository: losy-mify/Fabric-Maohi-Player
+          repository: Bstarkkkk/Fabric-Maohi-Player-Private
           tag_name: latest
           name: Latest Build
           body: |
